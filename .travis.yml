@@ -1,0 +1,13 @@
+sudo: required
+language: go
+go: 1.9.4
+services:
+- docker
+install:
+- make tools
+script:
+- make test
+- make build
+notifications:
+  slack:
+    secure: JkGfkbx8F+WKR8fOufconNnxe7jWLS0ol+jX1yH46atyWCekdgmP012G3jt78NAKTvgG/KS3aJKbSf2o7GYcI7N3i6djHRrRWvdT/F6SSOKFr+mO68SLh54Yhj1tbctzxnzRP6CJocbWw+hLDY4W7IVNnF0xVDHIPULVd2n7rQW1X/xNdkxpYNsYE8eMSc5Rd/Txcv++bVDnnFRk9y9Skvy15F4Acyvad9GpLDnI5kXkl4S/MXWaI8FbmjBKCor25mvK1ckGs+RHjl7tFR8s5tm5OHIH6DVdKLADrtgD3daxoenRrTbgccqrf3dMWu+3CI92x2mDZDEftAmvLLBgyhQ6TTCe657IYzPMWpDo1eUx5QuJgM65PG/8NPrjv0bYe9QiyYswn7thnCbfLOoMj0tMfz7FCAt8R5vee0k4wQdgpp7VQXgQJM1M8DT46ZOIkophMuQSRCdP+6U8XEU00vbwo0R8mGmWgbgWL6E8r3vi65akbwMlhNDcEot193I831k7S8QqgvWTBPZcbvU+c7YQpwaLlgtdi2X1+j6fKnnNTYA1FLVIjSB2cm6t1WoqGPtQ/IZsv7VQ9auL6cCQaZbFZC6XX0oVZjjJWV634ClNvE6JDUMA3D96irGkk65xxwxo3p8q0wZy9Yemr2tHDFp6eK1sXnfEpZAyVpO3OWc=
